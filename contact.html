@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquire | Court Farm Studios</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        studioGreen: '#1E3A2B',
+                        studioGold: '#C5A059',
+                        studioLight: '#F9F9F6',
+                        studioDark: '#222222'
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-studioLight text-studioDark font-sans antialiased flex flex-col min-h-screen">
+    
+    <nav class="bg-studioGreen text-white p-4 shadow-md">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold tracking-wide">Court Farm Studios</a>
+            <div class="space-x-6">
+                <a href="index.html" class="hover:text-studioGold transition">Home</a>
+                <a href="features.html" class="hover:text-studioGold transition">Facilities</a>
+                <a href="contact.html" class="text-studioGold transition">Enquire Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow max-w-6xl mx-auto px-4 py-12 w-full grid grid-cols-1 md:grid-cols-2 gap-12">
+        
+        <!-- Booking Form -->
+        <div class="bg-white p-8 rounded shadow-sm border border-gray-200">
+            <h1 class="text-3xl font-bold text-studioGreen mb-6">Make an Enquiry</h1>
+            <p class="text-gray-600 mb-8">Please fill out the form below with your requirements, and we will get back to you with rates and availability.</p>
+            
+            <form action="#" method="POST" class="space-y-5">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <div>
+                        <label for="firstName" class="block text-sm font-medium text-gray-700 mb-1">First Name</label>
+                        <input type="text" id="firstName" name="firstName" class="w-full border border-gray-300 rounded p-2 focus:outline-none focus:border-studioGold focus:ring-1 focus:ring-studioGold">
+                    </div>
+                    <div>
+                        <label for="lastName" class="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" class="w-full border border-gray-300 rounded p-2 focus:outline-none focus:border-studioGold focus:ring-1 focus:ring-studioGold">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                        <input type="email" id="email" name="email" class="w-full border border-gray-300 rounded p-2 focus:outline-none focus:border-studioGold focus:ring-1 focus:ring-studioGold">
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="w-full border border-gray-300 rounded p-2 focus:outline-none focus:border-studioGold focus:ring-1 focus:ring-studioGold">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="eventType" class="block text-sm font-medium text-gray-700 mb-1">Type of Activity</label>
+                    <select id="eventType" name="eventType" class="w-full border border-gray-300 rounded p-2 focus:outline-none focus:border-studioGold focus:ring-1 focus:ring-studioGold bg-white">
+                        <option value="" disabled selected>Select an option...</option>
+                        <option value="dance">Dance / Rehearsal</option>
+                        <option value="fitness">Fitness / Yoga Class</option>
+                        <option value="workshop">Workshop / Seminar</option>
+                        <option value="photography">Photography / Film Shoot</option>
+                        <option value="other">Other (Please specify below)</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Details & Preferred Dates</label>
+                    <textarea id="message" name="message" rows="4" class="w-full border border-gray-300 rounded p-2 focus:outline-none focus:border-studioGold focus:ring-1 focus:ring-studioGold" placeholder="Please include your preferred date, time, duration, and estimated headcount..."></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-studioGreen text-white font-bold py-3 rounded hover:bg-studioDark transition shadow-md">
+                    Send Enquiry
+                </button>
+            </form>
+        </div>
+
+        <!-- Location Information -->
+        <div class="flex flex-col justify-start">
+            <div class="bg-studioGreen text-white p-8 rounded shadow-lg mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-studioGold">Location</h2>
+                <p class="mb-4">Court Farm Studios is conveniently situated just off the A27.</p>
+                <div class="space-y-2">
+                    <p><strong>Address:</strong><br>
+                    Court Farm Studios<br>
+                    Near Falmer Pond<br>
+                    Brighton<br>
+                    BN1 9PB <!-- Note: Placeholder postcode, adjust as needed -->
+                    </p>
+                </div>
+                <div class="mt-6 pt-6 border-t border-gray-600">
+                    <p class="mb-2"><strong>Transport Links:</strong></p>
+                    <ul class="list-disc list-inside space-y-1 text-sm">
+                        <li>Directly opposite the AMEX Stadium</li>
+                        <li>Short walk from Falmer Railway Station</li>
+                        <li>Serviced by local Brighton & Hove bus routes</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Map Placeholder -->
+            <div class="w-full h-64 bg-gray-300 rounded shadow-inner flex items-center justify-center text-gray-500 text-sm border border-gray-400">
+                [ Google Maps Embed Placeholder ]
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-studioDark text-gray-400 py-8 mt-auto">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>&copy; 2026 Court Farm Studios. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

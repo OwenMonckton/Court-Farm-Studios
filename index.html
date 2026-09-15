@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Court Farm Studios | Studio Hire in Brighton</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        studioGreen: '#1E3A2B',
+                        studioGold: '#C5A059',
+                        studioLight: '#F9F9F6',
+                        studioDark: '#222222'
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-studioLight text-studioDark font-sans antialiased flex flex-col min-h-screen">
+    
+    <!-- Navigation -->
+    <nav class="bg-studioGreen text-white p-4 shadow-md">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold tracking-wide">Court Farm Studios</a>
+            <div class="space-x-6">
+                <a href="index.html" class="hover:text-studioGold transition">Home</a>
+                <a href="features.html" class="hover:text-studioGold transition">Facilities</a>
+                <a href="contact.html" class="bg-studioGold text-studioDark px-4 py-2 rounded font-semibold hover:bg-white transition">Enquire Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="flex-grow">
+        <div class="relative bg-studioDark overflow-hidden">
+            <!-- Hero Image Placeholder -->
+            <img src="IMG_0885.jpg" alt="Main Studio Space" class="absolute inset-0 w-full h-full object-cover opacity-50">
+            
+            <div class="relative z-10 max-w-6xl mx-auto px-4 py-32 sm:py-40 flex flex-col items-start">
+                <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-4 max-w-3xl">
+                    Flexible Studio Space for Hire in Falmer
+                </h1>
+                <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl">
+                    A bright, high-capacity venue equipped with sprung-style flooring and wall mirrors. Located opposite the AMEX Stadium and adjacent to Falmer Pond.
+                </p>
+                <div class="space-x-4 flex">
+                    <a href="contact.html" class="bg-studioGold text-studioDark px-6 py-3 rounded text-lg font-semibold hover:bg-white transition shadow-lg">Check Availability</a>
+                    <a href="features.html" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded text-lg font-semibold hover:bg-white hover:text-studioDark transition shadow-lg">View Facilities</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Info Banner -->
+        <div class="bg-white py-12 border-b border-gray-200">
+            <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <h3 class="text-xl font-bold text-studioGreen mb-2">Versatile Space</h3>
+                    <p class="text-gray-600">Ideal for dance, fitness, yoga, photography, and wide-open venue requirements.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-studioGreen mb-2">Professional Setup</h3>
+                    <p class="text-gray-600">Fitted ballet barres, full-length mirrors, and dedicated changing areas.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-studioGreen mb-2">Convenient Access</h3>
+                    <p class="text-gray-600">Private off-road car park and ground-floor access for easy load-in.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-studioDark text-gray-400 py-8 mt-auto">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>&copy; 2026 Court Farm Studios. All rights reserved.</p>
+            <p class="mt-2 text-sm">Located near Falmer Pond, Brighton.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
